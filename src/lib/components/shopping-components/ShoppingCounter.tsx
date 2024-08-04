@@ -24,6 +24,7 @@ export const ShoppingCounter = ({ value = 0 }: Props) => {
         </button>
         <button
           onClick={() => {
+            if (counter === 0) return;
             setCounter(counter - 1);
           }}
           className='flex justify-center items-center p-2 rounded-xl bg-gray-900 text-white hover:bg-gray-600 transition-all w-[100px] mr-2'
